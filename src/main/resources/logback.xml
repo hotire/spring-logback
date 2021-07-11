@@ -5,6 +5,7 @@
   <property name="CONSOLE_PATTERN"
             value="%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %clr(%-5level) [%thread,%X{traceId:-},%X{spanId:-},%X{spanExportable:-},%X{PtxId},%X{PspanId}] %clr(%logger{36}){cyan} [%file:%line] - %msg%n" />
 
+  <appender name="custom" class="ch.qos.logback.core.helpers.NOPAppender" />
   <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
       <pattern>${CONSOLE_PATTERN}</pattern>
